@@ -73,13 +73,13 @@ catalogo=Catalogo(host='localhost', user='root',password='',database='miapp')
 catalogo.agregar_producto( 1, 'Corrientes_2564.jpg','Cuando venís a estudiar','Impecable monoambiente con kitchenette', 1, 1, 1,'01148512340')
 catalogo.agregar_producto( 2,'Hortiguera_1825.jpg','Por cuestiones de trabajo','A estrenar con excelentes vistas al Parque Chacabuco', 2, 1, 1,'01175896325')
 
-#cod_producto = int(input("Ingrese el código del producto: "))
-#producto = catalogo.consultar_producto(cod_producto)
-#if producto:
-#   print(f"Producto encontrado: {producto['descripcion']}")
-#else:
-#  print("Producto no encontrado.")
+cod_producto = int(input("Ingrese el código del producto: "))
+producto = catalogo.consultar_producto(cod_producto)
+if producto:
+   print(f"Producto encontrado: {producto['descripcion']}")
+else:
+  print("Producto no encontrado.")
 
 catalogo.mostrar_producto(1)
-catalogo.modificar_producto( 1,'Corrientes_2564.jpg','','Impecable monoambiente con kitchenette', 3, 2, 2, '01148512340')
+catalogo.modificar_producto( 1,'Corrientes_2564.jpg','Por días de trabajo','Impecable monoambiente con kitchenette', 3, 2, 2, '01148512340')
 catalogo.mostrar_producto(1)
