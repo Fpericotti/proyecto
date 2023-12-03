@@ -1,0 +1,50 @@
+/*Website normalization*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Main*/
+.fieldset {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 3px;
+    background-color: #f2f2f2;
+    padding: 4%;
+    margin: 2% 20%;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.formulario > h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.td {
+    width: 55%;
+    padding: 10px;
+    margin: 1% 25%;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.td:hover {
+    background-color: #9aebd0;
+    color: black;
+}
+.link-white {
+    color: white; 
+    text-decoration: none;
+}
+
+
