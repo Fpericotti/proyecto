@@ -1,0 +1,20 @@
+{
+    "comentarios": [
+      {
+        "calificacion": 5,
+        "comentario": "Excelente alquiler. Limpio, cómodo y bien ubicado."
+      },
+      {
+        "calificacion": 4.5,
+        "comentario": "El alquiler cumplió todas nuestras expectativas. Sin duda volveríamos."
+      },
+      {
+        "calificacion": 4,
+        "comentario": "Buena relación calidad-precio en este alquiler. Nos gustó mucho."
+      },
+      {
+        "calificacion": 4.5,
+        "comentario": "El anfitrión fue muy amable y servicial. El alquiler estaba impecable."
+      }
+    ]
+  }

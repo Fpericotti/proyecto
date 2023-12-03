@@ -1,0 +1,311 @@
+/*Website normalization*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Header*/
+.flex-container1 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;  
+}
+.flex-containerHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.imgHB {
+    display: flex;
+    width: 5rem;
+    padding: 2%;
+}
+.flex-containerHeader > h1 {   
+    font-size: 4vw;
+    justify-content: center;
+    font-weight: 700;
+    width: 100%; 
+}
+/*Nav*/
+.nav-display {
+    background-color: #333;
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-display > li {
+    width: 100%;
+}
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+}
+li .nav-item {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+li > a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.nav-item:hover{
+    background-color: #fff;
+}
+
+
+/*Main*/
+.h2 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+    color: #26798e;
+
+}
+
+.item-h1 {grid-area: h1;} /*H1*/
+.item-main {grid-area: main;} /*Principal*/
+.item-h2 {grid-area: h2;} /*H2*/
+
+.grid-container {
+    display: flex;
+    grid-template-areas:
+    "h1 h1 h1 h1 h1 h1 h1 h1"
+    'main main main main main main main main'
+    "h2 h2 h2 h2 h2 h2 h2 h2";
+    grid-gap: 10px;
+    background-color: #ffffff;
+}
+
+.item-article {grid-area: article;} /*Article*/
+
+.grid-main {
+    display: grid;
+    grid-template-areas:
+    "article article article"
+}
+.flex-main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+}
+
+.flex-card {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #3333331f;
+    border-radius: 10px;
+    flex: 20%;
+}
+
+.text-card {
+    padding: 1rem;
+}
+
+.text-card > h3 {
+    font-weight: 400;
+}
+
+.text-card > p {
+    font-weight: 100;
+}
+
+.text-card > ul {
+    margin-left: 1rem;
+    font-weight: 100;
+}
+
+.slider-frame {
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    width: 400%;
+    animation: slide 32s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.submit > input {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    background-color: #26798e;
+    color: white;
+    border: none;
+}
+.submit > input:hover {
+    background-color: #9aebd0;
+    color: black;
+    cursor: pointer;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+/*Footer*/
+.flex-footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    flex-flow: column nowrap;
+    font-size: 1rem;
+}
+.redes > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Suscripcion*/
+.suscripcion{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+    padding: 1rem;
+}
+.suscripcion-input{
+    display: flex;
+    justify-content: space-between;
+}
+.correo {
+    width: 50%;
+    margin: 2%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.suscribirse {
+    width: 50%;
+    margin: 2%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.suscribirse:hover{
+    background-color: #63caa7;
+}
+.derechos{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*Media queries*/
+/* Small devices (600px) */
+@media only screen and (max-width: 600px){
+    .imgHB {
+        display: flex;
+        width: 5rem;
+        padding: 1%;
+    }
+    .flex-containerHeader {
+        flex-flow: column nowrap;
+    }
+    .flex-containerHeader>h1 {
+        display: none;
+    }
+    .nav-display {
+        flex-flow: column nowrap;
+    }
+    .flex-main {
+        flex-flow: column nowrap;
+    }
+    .nav-item {
+        padding: 1%;
+    }
+
+    /*Footer*/
+    .flex-footer {
+        flex-flow: column nowrap;
+        padding: 0.5rem;
+    }
+    .redes {
+        width: auto;
+    }
+    .redes > div{
+        margin: 1rem;
+    }
+
+    /*Suscripcion*/
+    .suscripcion{
+        width: auto;
+    }
+    .correo{
+        width: 50%;
+    }
+    .suscribirse{
+    width: 40%;
+    }
+}
+
+/* Medium devices (768px) */
+@media only screen and (min-width: 768px) {
+    .flex-main {
+        flex-flow: row wrap;
+    }
+
+    .flex-card {
+        flex: 40%;
+    }
+}
+
+/* Large devices (992px) */
+@media only screen and (min-width: 992px) {
+    .flex-main {
+        flex-flow: row wrap;
+    }
+
+    .flex-card {
+        flex: 20%;
+    }
+}

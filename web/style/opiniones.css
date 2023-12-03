@@ -1,0 +1,290 @@
+/*Website normalization*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Header*/
+.flex-container1 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;  
+}
+.flex-containerHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.imgHB {
+    display: flex;
+    width: 5rem;
+    padding: 2%;
+}
+.flex-containerHeader>h1 {   
+    font-size: 4vw;
+    justify-content: center;
+    font-weight: 700;
+    width: 100%;
+}
+/*Nav*/
+.nav-display {
+    background-color: #333;
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-display > li {
+    width: 100%;
+}
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+}
+li .nav-item {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+li > a:hover {
+    background-color: #fff;
+    color: #000;
+}
+li:hover{
+    background-color: #fff;
+}
+
+/*Main*/
+.grid-container2 > div {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.item-h1 {
+    background-image: url(../img/Opiniones/fondo-h1-opiniones.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-h1 > h1 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 10px;
+}
+
+.item-h1 {grid-area: h1;} /*H1*/
+.item-main {grid-area: main;} /*Principal*/
+.item-h2 {grid-area: h2;} /*H2*/
+
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+        "h1 h1 h1 h1 h1 h1 h1 h1"
+        'main main main main main main main main'
+        "h2 h2 h2 h2 h2 h2 h2 h2";
+    grid-gap: 0;
+}
+
+.flex-main {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #3333331f;
+    border-radius: 10px;
+    flex: 20%;
+}
+
+.flex-container2 > div {
+    padding: 1rem 2rem;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.card {
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+}
+
+.card > p {
+    align-self: center;
+}
+.imagen {
+    border-radius: 40px;
+}
+
+.card2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.line {
+    border-bottom: 1px solid #26798e;
+    box-shadow: 1px 1px 5px #26798e;
+    width: 40%;
+    margin: 0% 30%;
+}
+.fieldset {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 2%;
+    margin: 1% 10%;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.formulario > h2 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px;
+    font-weight: 700;
+    text-align: center;
+    color: #26798e;
+}
+.formulario > input {
+    width: 100%;
+}
+
+.formulario > label {
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+}
+
+.submit > input {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+.submit > input:hover {
+    background-color: #9aebd0;
+    color: black;
+}
+
+/*Footer*/
+.flex-footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    flex-flow: column nowrap;
+    font-size: 1rem;
+}
+.redes > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Suscripcion*/
+.suscripcion{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+    padding: 1rem;
+}
+.suscripcion-input{
+    display: flex;
+    justify-content: space-between;
+}
+.correo {
+    width: 50%;
+    margin: 2%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.suscribirse {
+    width: 50%;
+    margin: 2%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.suscribirse:hover{
+    background-color: #63caa7;
+}
+.derechos{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*Media queries*/
+/* Small devices (600px) */
+@media only screen and (max-width: 600px){
+    .imgHB {
+        display: flex;
+        width: 5rem;
+        padding: 1%;
+    }
+    .flex-containerHeader {
+        flex-flow: column nowrap;
+    }
+    .flex-containerHeader>h1 {
+        display: none;
+    }
+    .nav-display {
+        flex-flow: column nowrap;
+    }
+    .flex-main {
+        flex-flow: column nowrap;
+    }
+    .nav-item {
+        padding: 1%;
+    }
+
+    /*Footer*/
+    .flex-footer {
+        flex-flow: column nowrap;
+        padding: 0.5rem;
+    }
+    .redes {
+        width: auto;
+    }
+    .redes > div{
+        margin: 1rem;
+    }
+
+    /*Suscripcion*/
+    .suscripcion{
+        width: auto;
+    }
+    .correo{
+        width: 50%;
+    }
+    .suscribirse{
+    width: 40%;
+    }
+}
