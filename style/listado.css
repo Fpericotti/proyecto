@@ -1,0 +1,93 @@
+/*Website normalization*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Header*/
+.flex-container1 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;  
+}
+.flex-containerHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.imgHB {
+    display: flex;
+    width: 5rem;
+    padding: 2%;
+}
+.flex-containerHeader > h1 {   
+    font-size: 4vw;
+    justify-content: center;
+    font-weight: 700;
+    width: 100%;
+    color: #fff;
+}
+
+/* Estilos para todo el proyecto */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+.contenedor-centrado {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+main{
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+table {
+    max-width: 70%;
+    background-color: f2f2f2;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 2% 20%;
+    align-items: center;
+}
+a {
+    padding: 12px;
+    margin: 4px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 85%;
+}
+a:hover {
+    background-color: #333;
+}
+.productos{
+    text-align: center;
+}
+
+/*Footer*/
+.flex-footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.derechos{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}

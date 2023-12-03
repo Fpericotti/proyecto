@@ -6,28 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial- scale=1.0">
     <title>Listado de Productos</title>
-    <link rel="stylesheet" href="style/estiloTPO.css">
+    <link rel="stylesheet" href="style/listado.css">
 </head>
 
 <body>
-    <h1>Listado de Productos</h1>
-    <h3>Codo a Codo 2023</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Código</th>
-                <th>Descripción</th>
-                <th>Cantidad</th>
-                <th align="right">Precio</th>
-                <th>Imagen</th>
-                <th align="right">Proveedor</th>
-            </tr>
-        </thead>
-        <tbody id="tablaProductos"> </tbody>
-    </table>
-    <div class="contenedor-centrado">
-        <a href="index.html">Menu principal</a>
-    </div>
+    <header class="flex-container1" id="idHeader"> </header>
+    
+    <main>
+        <h1>Listado de Productos</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th align="right">Precio</th>
+                    <th>Imagen</th>
+                    <th align="right">Proveedor</th>
+                </tr>
+            </thead>
+            <tbody id="tablaProductos" class="productos"> </tbody>
+        </table>
+
+        <div class="contenedor-centrado">
+            <a href="index.html">Menu principal</a>
+        </div>
+    </main>
+
+    <footer id="idFooter"> </footer>
+
+    <script src="js/script.js"></script>
     <script src="js/listado.js"></script>
 </body>
             

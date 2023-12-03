@@ -1,0 +1,97 @@
+/*Website normalization*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*Header*/
+.flex-container1 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;  
+}
+.flex-containerHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.imgHB {
+    display: flex;
+    width: 5rem;
+    padding: 2%;
+}
+.flex-containerHeader > h1 {   
+    font-size: 4vw;
+    justify-content: center;
+    font-weight: 700;
+    width: 100%;
+    color: #fff;
+}
+
+/*Main*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+main{
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+.fieldset {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 3px;
+    background-color: #f2f2f2;
+    padding: 2%;
+    margin: 2% 20%;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.td {
+    width: 55%;
+    padding: 10px;
+    margin: 1% 25%;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    text-align: center;
+    margin: 20px;
+    padding: 20px ;
+}
+.td:hover {
+    background-color: #9aebd0;
+    color: black;
+}
+.link-white {
+    color: white; 
+    text-decoration: none;
+}
+
+/*Footer*/
+.flex-footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.derechos{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
