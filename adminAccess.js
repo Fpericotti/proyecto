@@ -3,9 +3,9 @@ function checkPassword() {
 
   if (contrasena == "supervisor") {
     alert("Contraseña correcta. Acceso permitido.");
-    window.location.href = "../proyecto/index.html";
+    window.location.href = "../index.html";
   } else {
     alert("Contraseña incorrecta. Acceso denegado.");
-    window.location.href = "../proyecto/web/index.html";
+    window.location.href = "../web/index.html";
   }
   }
