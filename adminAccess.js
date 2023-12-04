@@ -6,6 +6,6 @@ function checkPassword() {
     window.location.href = "../index.html";
   } else {
     alert("Contraseña incorrecta. Acceso denegado.");
-    window.location.href = "../web/index.html";
+    window.location.href = "..//web/index.html";
   }
   }
