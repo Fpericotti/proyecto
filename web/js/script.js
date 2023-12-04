@@ -3,7 +3,7 @@ var cad = `
 <div class="flex-containerHeader">
 <a class="imgHB" href="index.html"><img src="img/LogoHB.svg" alt="Casa Alquileres"></img></a>
 <h1>Book.your.Home</h1>
-<a style="text-decoration: none; color: white; display: flex; width: 5rem; padding: 2%;" href="/index.html">Administrar</a>
+<a onClick="checkPassword()" style="cursor: pointer; text-decoration: none; color: white; display: flex; width: 5rem; padding: 2%;">Administrar</a>
 </div>
 <nav>
 <ul class="nav-display">
